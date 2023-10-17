@@ -76,7 +76,7 @@ button {
 
 /* layout */
 .margin {
-  padding: 0 20rem;
+  padding: 0 25rem;
 }
 
 @media (max-width: 1300px) {
@@ -94,6 +94,9 @@ button {
 @media (max-width: 768px) {
   .margin {
     padding: 0 1.8rem;
+  }
+  section {
+    height: 100dvh !important;
   }
 }
 
@@ -121,7 +124,7 @@ section {
 main {
   width: 100%;
   > section:first-child {
-    height: calc(100vh - 7rem) !important;
+    height: calc(100vh - 7rem);
   }
 }
 
