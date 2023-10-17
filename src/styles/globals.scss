@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  /* max-width: 100vw; */
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #111827;
+  /* overflow-x: hidden; */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Base font size for all devices */
+html {
+  font-size: 62.5%; /* Equivalent to 10px */
+}
+
+/* Media query for small phones */
+@media (max-width: 480px) {
+  html {
+    font-size: 55%; /* Equivalent to 8px for small phones */
+  }
+}
+
+/* Media query for medium-sized phones */
+@media (min-width: 481px) and (max-width: 767px) {
+  html {
+    font-size: 58%; /* Equivalent to 8.8px for medium-sized phones */
+  }
+}
+
+/* Media query for large phones */
+@media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    font-size: 60%; /* Equivalent to 9.6px for large phones */
+  }
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  font-size: inherit;
+}
+
+/* CSS */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* layout */
+.margin {
+  padding: 0 20rem;
+}
+
+@media (max-width: 1300px) {
+  .margin {
+    padding: 0 12rem;
+  }
+}
+
+@media (max-width: 1150px) {
+  .margin {
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .margin {
+    padding: 0 1.8rem;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  /* border-radius: 10px; */
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 10px; */
+  -webkit-box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+section {
+  height: 100vh;
+}
+
+main {
+  width: 100%;
+  > section:first-child {
+    height: calc(100vh - 7rem) !important;
+  }
+}
+
+.mouse {
+  width: 30px; /* Reduce the width */
+  height: 60px; /* Reduce the height */
+  border: 2px solid #fff; /* Reduce the border size */
+  border-radius: 40px; /* Reduce the border radius */
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 8px; /* Reduce the width of the pseudo-element */
+    height: 8px; /* Reduce the height of the pseudo-element */
+    position: absolute;
+    top: 6px; /* Adjust the top position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 45px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 45px;
+  }
+}
