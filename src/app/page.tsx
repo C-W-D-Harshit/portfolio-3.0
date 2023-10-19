@@ -1,4 +1,6 @@
+import Contact from "@/components/Contact";
 import Home from "@/components/Home";
+import Projects from "@/components/Projects";
 import TechSkills from "@/components/TechSkills";
 
 export default function App() {
@@ -6,6 +8,8 @@ export default function App() {
     <main>
       <Home />
       <TechSkills />
+      <Projects />
+      <Contact />
     </main>
   );
 }

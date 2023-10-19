@@ -68,6 +68,46 @@ export default function TechSkills() {
       icon: <SiDeno />,
     },
   ];
+  const data1 = [
+    {
+      name: "React",
+      icon: <IoLogoReact />,
+    },
+    {
+      name: "Nextjs",
+      icon: <TbBrandNextjs />,
+    },
+    {
+      name: "NodeJs",
+      icon: <IoLogoNodejs />,
+    },
+  ];
+  const data2 = [
+    {
+      name: "React",
+      icon: <IoLogoReact />,
+    },
+    {
+      name: "Nextjs",
+      icon: <TbBrandNextjs />,
+    },
+    {
+      name: "NodeJs",
+      icon: <IoLogoNodejs />,
+    },
+    {
+      name: "React",
+      icon: <IoLogoReact />,
+    },
+    {
+      name: "Nextjs",
+      icon: <TbBrandNextjs />,
+    },
+    {
+      name: "NodeJs",
+      icon: <IoLogoNodejs />,
+    },
+  ];
   return (
     <section id="techSkills">
       <p>
@@ -78,13 +118,37 @@ export default function TechSkills() {
       <div className="skills">
         <div>
           <p>Mobile & Web</p>
-          <div>
+          <div className="wb">
             {data?.map((item, index) => (
               <div key={index}>
                 {item.icon}
                 <p>{item.name}</p>
               </div>
             ))}
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Programing</p>
+            <div className="wb">
+              {data1?.map((item, index) => (
+                <div key={index}>
+                  {item.icon}
+                  <p>{item.name}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <p>Miscellaneous</p>
+            <div className="wb">
+              {data2?.map((item, index) => (
+                <div key={index}>
+                  {item.icon}
+                  <p>{item.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

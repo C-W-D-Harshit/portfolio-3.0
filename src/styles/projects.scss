@@ -1,0 +1,97 @@
+#projects {
+  width: 100%;
+  padding: 4rem 0;
+
+  > p {
+    text-align: center;
+    font-size: 6rem;
+    color: rgb(184, 94, 230);
+    font-weight: 700;
+    margin-bottom: 7rem;
+
+    > span {
+      color: #fff;
+    }
+  }
+}
+
+.projectHolder {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  > * {
+    width: 24%;
+    background-color: #1f2937;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    min-width: 35rem;
+  }
+
+  .projectCard {
+    > .projectCard_img {
+      width: 100%;
+      height: 17rem;
+      margin-bottom: 2rem;
+      > :first-child {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.5rem;
+      }
+    }
+    > .projectCard_name {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    > :nth-child(3) {
+      color: #8e96a2;
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin: 1rem 0;
+    }
+    > :nth-child(4) {
+      margin: 0.5rem 0;
+      color: #8e96a2;
+      font-size: 1.3rem;
+      > span {
+        color: #fff;
+      }
+    }
+
+    > :last-child {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      > * {
+        > button {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          padding: 1rem 1.5rem;
+          background-color: rgb(184, 94, 230);
+          border: none;
+          border-radius: 0.5rem;
+          font-weight: 600;
+          color: #0f141b;
+        }
+      }
+      > :last-child {
+        > button {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    > p {
+      font-size: 4rem;
+    }
+  }
+}

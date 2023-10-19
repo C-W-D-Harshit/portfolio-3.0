@@ -96,7 +96,7 @@ button {
     padding: 0 1.8rem;
   }
   section {
-    height: 100dvh !important;
+    min-height: 100dvh !important;
   }
 }
 
@@ -118,13 +118,13 @@ button {
 }
 
 section {
-  height: 100vh;
+  min-height: 100dvh;
 }
 
 main {
   width: 100%;
   > section:first-child {
-    height: calc(100vh - 7rem);
+    min-height: calc(100vh - 7rem);
   }
 }
 
