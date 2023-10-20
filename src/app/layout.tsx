@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import "@/styles/globals.scss";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -45,6 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="margin">
+        <Toaster position="top-center" reverseOrder={false} />
         <Header />
         {children}
         <Footer />
