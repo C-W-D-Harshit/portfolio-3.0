@@ -28,10 +28,12 @@ export default function Home() {
             loop: true,
           }}
         />
-        <button className="home__btn">
-          <BsFillCloudArrowDownFill />
-          <p>Resume</p>
-        </button>
+        <Link href={"/resume.pdf"} target="_blank">
+          <button className="home__btn">
+            <BsFillCloudArrowDownFill />
+            <p>Resume</p>
+          </button>
+        </Link>
       </div>
       <div className="home__image">
         <Image src={"/profile.jpg"} alt="profile" width={500} height={500} />
