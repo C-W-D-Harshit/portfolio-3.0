@@ -8,11 +8,7 @@ import { YouEmailTemplate } from "./email/YouEmailTemplate";
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 
-export default function Contact({
-  searchParams,
-}: {
-  searchParams: { success: string };
-}) {
+export default function Contact({}) {
   return (
     <section id="contact">
       <p>
