@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     description: "Developed by the one & only HARSHIT!",
     images: [
       {
-        url: "https://cleverdevloper.in/og.png",
+        url: "https://cleverdevloper.in/profile.jpg",
       },
     ],
     url: "https://cleverdevloper.in/",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   manifest: "/manifest.json",
-  icons: { apple: "/og.png" },
+  icons: { apple: "/profile.jpg" },
 };
 
 export default function RootLayout({
