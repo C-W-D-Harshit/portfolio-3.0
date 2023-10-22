@@ -20,7 +20,11 @@ export default function Contact({
         <span>Contact Me</span>
         {"/>"}
       </p>
-      <form action={sendEmail} className="contactForm">
+      <form
+        action={sendEmail}
+        onSubmit={() => toast.success("Success! Your Message Has Been Sent")}
+        className="contactForm"
+      >
         <input required type="text" placeholder="Name" name="name" />
         <input required type="email" placeholder="Email" name="email" />
         <textarea
@@ -31,12 +35,7 @@ export default function Contact({
           name="message"
         />
         <input type="submit" hidden />
-        <button
-          onClick={() => toast.success("Response Recorded Successfully!")}
-          type="submit"
-        >
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </section>
   );

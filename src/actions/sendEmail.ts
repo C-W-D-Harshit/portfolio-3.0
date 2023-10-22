@@ -37,5 +37,5 @@ export async function sendEmail(formData: FormData) {
   } catch (error) {
     console.log(error);
   }
-  redirect("/?success=true");
+  // redirect("/#home?success=true");
 }

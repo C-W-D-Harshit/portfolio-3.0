@@ -16,6 +16,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import { BiLogoCPlusPlus, BiLogoJava, BiLogoPython } from "react-icons/bi";
 
 export default function TechSkills() {
   const data = [
@@ -70,16 +71,16 @@ export default function TechSkills() {
   ];
   const data1 = [
     {
-      name: "React",
-      icon: <IoLogoReact />,
+      name: "Java",
+      icon: <BiLogoJava />,
     },
     {
-      name: "Nextjs",
-      icon: <TbBrandNextjs />,
+      name: "Python",
+      icon: <BiLogoPython />,
     },
     {
-      name: "NodeJs",
-      icon: <IoLogoNodejs />,
+      name: "C++",
+      icon: <BiLogoCPlusPlus />,
     },
   ];
   const data2 = [
